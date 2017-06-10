@@ -110,6 +110,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	order: 4;
+	margin-top: 92px;
 }
 
 .about__description {
