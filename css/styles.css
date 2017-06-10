@@ -188,9 +188,14 @@ p {
 	display: flex;
 }
 
+.header__nav_affix {
+	display: none;
+}
+
 .header__nav_affix-fixed {
 	position: fixed;
 	top: 0;
+	display: block;
 }
 
 /* 801px for tablet, landscape iPad, lo-res laptops ands desktops */
