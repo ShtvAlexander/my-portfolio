@@ -189,7 +189,10 @@ p {
 }
 
 .header__nav_affix {
-	display: none;
+	/*order: 4;*/
+	position: absolute;
+	top: 100vh;
+	/*display: none;*/
 }
 
 .header__nav_affix-fixed {
@@ -231,20 +234,6 @@ p {
 		flex: 1 1 56px;
 		order: 3;
 	}
-
-	.header__nav_affix {
-		/*order: 4;
-		position: absolute;
-		top: 100vh;*/
-		display: none;
-	}
-
-	.header__nav_affix-fixed {
-		position: fixed;
-		top: 0;
-		display: block;
-  }
-
 }
 
 .header__bg {
