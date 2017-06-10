@@ -121,6 +121,11 @@ p {
 	margin-bottom: 0;
 }
 
+.about__anchor {
+	position: relative;
+	top: -92px;
+}
+
 .social-icons {
 	display: flex;
 	justify-content: center;
