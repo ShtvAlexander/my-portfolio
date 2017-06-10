@@ -228,15 +228,16 @@ p {
 	}
 
 	.header__nav_affix {
-		order: 4;
+		/*order: 4;
 		position: absolute;
-		top: 100vh;
-		/*display: none;*/
+		top: 100vh;*/
+		display: none;
 	}
 
 	.header__nav_affix-fixed {
-	position: fixed;
-	top: 0;
+		position: fixed;
+		top: 0;
+		display: block;
   }
 
 }
@@ -287,8 +288,6 @@ p {
 		display: none;
 	}
 }
-
-/*section my works*/
 
 .works {
 	height: 330vh;
