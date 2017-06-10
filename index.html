@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Simple landing page</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Here you should put in some fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:600" rel="stylesheet">
+
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body class="page">
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="i-facebook" viewBox="0 0 24 24">
+			<path stroke-width="0" fill="currentColor" d="M19 3.998v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h-3v-7h-2v-3h2v-2.5a3.5 3.5 0 0 1 3.5-3.5H19zm1-2H4c-1.105 0-1.99.895-1.99 2l-.01 16c0 1.104.895 2 2 2h16c1.103 0 2-.896 2-2v-16a2 2 0 0 0-2-2z"/>
+		</symbol>
+		<symbol id="i-twitter" viewBox="0 0 24 24">
+			<path stroke-width="0" fill="currentColor" d="M22 5.894a8.304 8.304 0 0 1-2.357.636 4.064 4.064 0 0 0 1.804-2.235c-.792.463-1.67.8-2.605.98A4.128 4.128 0 0 0 15.847 4c-2.266 0-4.104 1.808-4.104 4.04 0 .316.037.624.107.92a11.711 11.711 0 0 1-8.458-4.22 3.972 3.972 0 0 0-.555 2.03c0 1.401.724 2.638 1.825 3.362a4.138 4.138 0 0 1-1.858-.505v.05c0 1.958 1.414 3.59 3.29 3.961a4.169 4.169 0 0 1-1.852.07c.522 1.604 2.037 2.772 3.833 2.804a8.315 8.315 0 0 1-5.096 1.73c-.331 0-.658-.02-.979-.057A11.748 11.748 0 0 0 8.29 20c7.547 0 11.674-6.155 11.674-11.493 0-.175-.004-.349-.011-.522A8.265 8.265 0 0 0 22 5.894z"/>
+		</symbol>
+	</svg>
+	
+	<div class="header__bg"></div>
+	<div class="header__mask"></div>
+	<div class="page__inner_top">
+		<header class="header">
+			<h1 class="header__headline">sahskasanek</h1>
+			<p class="header__description">Hi, I’m Alexander Shestakov, </br>a newbie developer from Russia, </br>Saint-Pitersburg</p>
+		</header>
+		<section class="about">
+			<h2 class="about__headline">About me</h2>
+			<p class="about__description">I started to learn HTML&CSS one year ago, now I'm passing freecodecamp.com and mastering in JS.</p>
+			<p class="about__description about__description_last">Also, I spend a lot of time improving my web design skills. Now, it's quite easy for me to create an elementary website using only HTML & CSS & vanilla JS.</p>
+		</section>
+		<div class="social-icons">
+			<a href="#" class="link social-icons__link"><svg class="icon link__icon">
+				<use xlink:href="#i-twitter"></use>
+			</svg></a>
+			<a href="#" class="link social-icons__link"><svg class="icon link__icon">
+				<use xlink:href="#i-facebook"></use>
+			</svg></a>
+		</div>
+		<nav class="nav header__nav header__nav_affix">
+			<a href="#" class="link nav__link nav__link_logo">sahskasanek</a>
+			<ul class="nav__list list">
+				<li class="nav__item"><a class="link nav__link" href="#">about me</a></li>
+				<li class="nav__item"><a class="link nav__link" href="#">works</a></li>
+				<li class="nav__item"><a class="link nav__link" href="#">contacts</a></li>
+			</ul>
+		</nav>
+	</div>
+	<section class="works">
+
+	</section>
+	<script src="js/main.js"></script>
+</body>
+</html>
