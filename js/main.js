@@ -11,16 +11,16 @@
 //       navAffix.classList.remove('header__nav_affix-fixed');
 //   });
 // }
-let navAffix = document.getElementsByClassName("header__nav_affix")[0];
-let navTop = navAffix.offsetTop;
-window.onscroll = scroll;
-function scroll() {
-  var scrollTop = window.pageYOffset;
-  console.log(scrollTop);
-  if (scrollTop > navTop) {
-    navAffix.classList.add('header__nav_affix-fixed');
-  }
-  else {
-    navAffix.classList.remove('header__nav_affix-fixed');
-  }
-}
+// let navAffix = document.getElementsByClassName("header__nav_affix")[0];
+// let navTop = navAffix.offsetTop;
+// window.onscroll = scroll;
+// function scroll() {
+//   var scrollTop = window.pageYOffset;
+//   console.log(scrollTop);
+//   if (scrollTop > navTop) {
+//     navAffix.classList.add('header__nav_affix-fixed');
+//   }
+//   else {
+//     navAffix.classList.remove('header__nav_affix-fixed');
+//   }
+// }
