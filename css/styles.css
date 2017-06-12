@@ -186,8 +186,8 @@ p:last-of-type {
 	align-items: center;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
-	color: rgba(255,255,255,1);
-	background-color: rgba(13,19,53,1);
+	/*color: rgba(255,255,255,1);*/
+	background-color: rgba(229,246,254,0.71);
 }
 
 .nav__link {
@@ -218,15 +218,14 @@ p:last-of-type {
 
 .header__nav_affix {
 	/*order: 4;*/
-	position: absolute;
-	top: 100vh;
-	/*display: none;*/
+	position: fixed;
+	top: 0;
+	display: none;
 }
 
 .header__nav_affix-fixed {
-	position: fixed;
-	top: 0;
 	display: block;
+
 }
 
 @media screen and (min-width: 988px) {
@@ -240,7 +239,7 @@ p:last-of-type {
 	top: 0;
 	width: 100%;
 	height: 100vh;
-	background: #e5f6fe url(../images/bg_header-cyan.jpg) no-repeat;
+	background: rgba(229,246,254,1) url(../images/bg_header-cyan.jpg) no-repeat;
 	-webkit-background-size: 425px auto;
 	background-size: 425px auto;
 	background-position: center center;
