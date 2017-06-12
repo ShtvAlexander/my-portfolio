@@ -26,7 +26,7 @@ html {
 	font-family: "Merriweather", serif;
 	font-weight: 300;
 	color: rgba(13,19,53,1);
-	background-color: #ffffff;
+	background-color: rgba(229,246,254,1);
 }
 
 .page__inner_top {
@@ -121,7 +121,7 @@ p:last-of-type {
 .about {
 	display: flex;
 	flex-direction: column;
-	margin-top: 52px;
+	/*margin-top: 52px;*/
 }
 
 .about__description {
@@ -130,7 +130,7 @@ p:last-of-type {
 
 .about__anchor {
 	position: relative;
-	top: -52px;
+	/*top: -52px;*/
 }
 
 .social-icons {
