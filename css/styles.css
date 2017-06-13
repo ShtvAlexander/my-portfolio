@@ -2,7 +2,7 @@ html {
 	width: 100%;
 	height: 100%;
 	font-size: 16px;
-	line-height: 1.3;
+	line-height: 1.4;
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
@@ -21,28 +21,13 @@ html {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
 	min-width: 320px;
 	font-family: "Merriweather", serif;
 	font-weight: 300;
 	color: rgba(13,19,53,1);
 	background-color: rgba(229,246,254,1);
-}
-
-.page__inner_top {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: relative;
-	max-width: 100%;
-	min-height: 100vh;
-	padding: 0 1rem;
-}
-
-@media screen and (min-width: 988px) {
-	.page__inner_top {
-		padding: 0 calc(50% - 470px) 0 0;
-	}
 }
 
 h1, 
@@ -67,12 +52,7 @@ h3 {
 }
 
 p {
-	margin: 0 0 1rem 0;
-	padding: 0 1rem;
-}
-
-p:last-of-type {
-	margin-bottom: 0;
+	margin: 0 0;
 }
 
 .list {
@@ -99,7 +79,7 @@ p:last-of-type {
 .social-icons {
 	align-self: center;
 	position: relative;
-	max-width: 470px;
+	/*max-width: 470px;*/
 }
 
 .header {
@@ -157,9 +137,11 @@ p:last-of-type {
 	.header, 
 	.about, 
 	.social-icons {
-		align-self: flex-start;
+		/*align-self: flex-start;*/
+		width: 80%;
+		padding-left: 40%;
 		position: relative;
-		margin-left: 50%;
+		/*margin-left: 50%;*/
 	}
 	
 	.header {
@@ -177,13 +159,14 @@ p:last-of-type {
 }
 
 .nav {
-	width: 100vw;
+	width: 100%;
 }
 
 .header__nav {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	/*align-items: center;*/
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	/*color: rgba(255,255,255,1);*/
@@ -197,28 +180,22 @@ p:last-of-type {
 	padding: 13px 13px;
 }
 
-.nav__link_logo {
-	padding: 0 0;
-	font-size: 2.369em;
-	line-height: 0.84;
-}
-
 .nav__list {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	width: 100%;
+	justify-content: flex-end;
+	width: 80%;
 	margin: 0 0;
 }
 
 .nav__item {
-	flex: 1 1 100%;
+	/*flex: 1 1 100%;*/
 	display: flex;
 	justify-content: center;
 }
 
 .header__nav_affix {
-	/*order: 4;*/
 	position: fixed;
 	top: 0;
 	display: none;
@@ -226,13 +203,6 @@ p:last-of-type {
 
 .header__nav_affix-fixed {
 	display: flex;
-
-}
-
-@media screen and (min-width: 988px) {
-	.header__nav {
-		margin: 0 0;
-	}
 }
 
 .header__bg {
