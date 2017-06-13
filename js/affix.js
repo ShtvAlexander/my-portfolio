@@ -24,7 +24,7 @@ function initAffix(element) {
 //and page scroll position.
 function delegateNav() {
   if(window.innerWidth > minWidth) {
-    if(window.scrollY > navTop) {
+    if(window.scrollY > window.innerHeight) {
       initAffix(navElement);
       stoppedAt = window.scrollY;
     } else {
