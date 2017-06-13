@@ -191,7 +191,7 @@ p:last-of-type {
 }
 
 .nav__link {
-	flex: 1 1 100%;
+	/*flex: 1 1 100%;*/
 	display: flex;
 	justify-content: center;
 	padding: 13px 13px;
@@ -214,6 +214,7 @@ p:last-of-type {
 .nav__item {
 	flex: 1 1 100%;
 	display: flex;
+	justify-content: center;
 }
 
 .header__nav_affix {
@@ -224,7 +225,7 @@ p:last-of-type {
 }
 
 .header__nav_affix-fixed {
-	display: block;
+	display: flex;
 
 }
 
