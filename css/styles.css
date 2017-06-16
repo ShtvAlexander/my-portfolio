@@ -114,6 +114,18 @@ p {
 	/*top: -52px;*/
 }
 
+.comment {
+	color: rgba(13,19,53,0.5);
+}
+
+.comment__list::before {
+	content: "/*";
+}
+
+.comment__list::after {
+	content: "*/";
+}
+
 .link__icon {
 	width: 28px;
 	height: 28px;
@@ -124,7 +136,6 @@ p {
 
 @media screen and (min-width: 801px) {
 	.header, 
-	.about, 
 	.social-icons {
 		/*align-self: flex-start;*/
 		width: 50%;
@@ -144,10 +155,21 @@ p {
 	}
 
 	.about {
-		align-self: flex-start;
-		padding-left: 10%;
-		padding-right: 0;
+		flex-direction: row;
+		/*align-self: flex-start;*/
+		padding-left: 5%;
+		padding-right: 5%;
 	}
+
+	.about__main {
+		flex: 3 1;
+		padding-right: 5%;
+	}
+
+	.about__comment {
+		flex: 2 3;
+	}
+
 }
 
 .nav {
