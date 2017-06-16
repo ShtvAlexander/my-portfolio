@@ -80,6 +80,7 @@ p {
 	align-self: center;
 	position: relative;
 	/*max-width: 470px;*/
+	padding: 0 1rem;
 }
 
 .header {
@@ -126,23 +127,26 @@ p {
 	.about, 
 	.social-icons {
 		/*align-self: flex-start;*/
-		width: 80%;
-		padding-left: 40%;
-		position: relative;
+		width: 50%;
+		/*padding: 0 10%;*/
 		/*margin-left: 50%;*/
 	}
 	
 	.header {
 		flex: 1 1 100vh;
-		justify-content: center;
+		justify-content: flex-start;
+		align-self: flex-end;
+		padding: 10vh 10% 0 0;
 	}
 
 	.header__description {
 		text-align: left;
 	}
 
-	.social-icons {
-		flex: 1 1 56px;
+	.about {
+		align-self: flex-start;
+		padding-left: 10%;
+		padding-right: 0;
 	}
 }
 
