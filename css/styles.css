@@ -61,7 +61,6 @@ p {
 }
 
 .link {
-	display: inline-block;
 	color: currentColor;
 	text-decoration: none;
 }
