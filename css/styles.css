@@ -152,10 +152,6 @@ p {
 		padding: 10vh 5% 0 0;
 	}
 
-	.header__description {
-		text-align: left;
-	}
-
 	.about {
 		flex-direction: column;
 		/*align-self: flex-start;*/
