@@ -27,7 +27,8 @@ html {
 	font-family: "Merriweather", serif;
 	font-weight: 300;
 	color: rgba(13,19,53,1);
-	background-color: rgba(229,246,254,1);
+	/*background-color: rgba(229,246,254,1);*/
+	background-color: white;
 }
 
 h1, 
@@ -102,7 +103,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	/*margin-top: 52px;*/
-	background-color: white;
+	/*background-color: white;*/
 }
 
 .about__description {
@@ -180,10 +181,8 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/*align-items: center;*/
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
-	/*color: rgba(255,255,255,1);*/
 	background-color: rgba(229,246,254,0.71);
 }
 
