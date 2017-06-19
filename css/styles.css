@@ -122,7 +122,7 @@ p {
   text-indent: 1.333em;
 }
 .about__secondary_commented {
-  color: #0d1335;
+  color: rgba(13,19,53,0.5);
 }
 .list_quoted::before {
   content: "/*";
