@@ -258,7 +258,7 @@ p {
   height: 100vh;
 }
 .header__bg {
-  background: rgba(229,246,254,0.71) url("../images/bg_header.png") no-repeat;
+  background: rgba(229,246,254,0.71) url("../images/bg_header_320.png") no-repeat;
   background-size: 425px auto;
   background-position: center center;
 }
