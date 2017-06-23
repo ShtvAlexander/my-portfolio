@@ -9,9 +9,9 @@ var minWidth = 319;
 //When did I become affixed? [dont edit]
 var stoppedAt = 300;
 //What is the name of the element to affix?
-var navElement = document.getElementsByClassName("header__nav_affix")[0];
+var navElement = document.getElementsByClassName("nav_affix")[0];
 //What class should I give on affix?
-var fixedClass = 'header__nav_affix-fixed'
+var fixedClass = 'nav_affix-fixed'
 
 var navTop = navElement.offsetTop;
 
