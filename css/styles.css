@@ -78,6 +78,101 @@ p {
   -webkit-filter: opacity(0.7);
           filter: opacity(0.7);
 }
+.nav {
+  width: 100%;
+  padding: 0 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-color: rgba(229,246,254,0.71);
+  z-index: 999;
+}
+.nav_affix {
+  position: fixed;
+  top: 0;
+  display: none;
+}
+.nav_affix-fixed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: 0 0;
+}
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 13px 13px;
+}
+.nav__link_logo {
+  display: none;
+}
+.nav__link_hidden-m {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav__link_hidden-s {
+  display: none;
+}
+/* Hide the social icons and reveal the contacts link */
+@media screen and (min-width: 376px) {
+  .nav__list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .nav__link_hidden-m {
+    display: none;
+  }
+  .nav__link_hidden-s {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/* 801px for tablet, landscape iPad, lo-res laptops ands desktops */
+@media screen and (min-width: 801px) {
+  .nav {
+    padding: 0 5%;
+  }
+  .nav__item_logo {
+    margin-left: calc(50% - 40px);
+    margin-right: auto;
+  }
+  .nav__link_logo {
+    display: inline-block;
+    padding: 0 13px;
+    font-weight: 700;
+    line-height: 54px;
+  }
+}
 .header,
 .about,
 .social-icons {
@@ -172,82 +267,6 @@ p {
     -webkit-box-flex: 2;
         -ms-flex: 2 3;
             flex: 2 3;
-  }
-}
-.nav {
-  width: 100%;
-  z-index: 999;
-}
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 90%;
-  margin: 0 0;
-}
-.nav__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.nav__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 13px;
-}
-.nav__link_hidden-m {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.nav__link_hidden-s {
-  display: none;
-}
-.header__nav {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-  background-color: rgba(229,246,254,0.71);
-}
-.header__nav_affix {
-  position: fixed;
-  top: 0;
-  display: none;
-}
-.header__nav_affix-fixed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-@media screen and (min-width: 376px) {
-  .nav__list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .nav__link_hidden-m {
-    display: none;
-  }
-  .nav__link_hidden-s {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 .header__bg,
