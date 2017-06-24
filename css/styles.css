@@ -52,6 +52,8 @@ h2 {
   font-size: 1.777em;
 }
 h3 {
+  margin: 1rem 0;
+  font-family: "Merriweather", serif;
   font-size: 1.333em;
 }
 p {
@@ -164,15 +166,6 @@ p {
   }
 }
 .page__section {
-  -ms-flex-item-align: center;
-      align-self: center;
-  position: relative;
-  padding: 0 1rem;
-}
-.header {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100vh;
-          flex: 1 1 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +173,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+.header {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100vh;
+          flex: 1 1 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -191,15 +194,6 @@ p {
 .header__description {
   font-size: 1.333em;
   text-align: center;
-}
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .about__description {
   text-indent: 1.333em;
@@ -224,6 +218,20 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
+/* 
+
+Works section 
+
+*/
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 /* 801px for tablet, landscape iPad, lo-res laptops ands desktops */
 @media screen and (min-width: 801px) {
   .page__section {
@@ -239,7 +247,8 @@ p {
     padding-top: 10vh;
     padding-left: 0;
   }
-  .inner {
+  .inner,
+  .project {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -292,9 +301,6 @@ p {
   .page__mask {
     display: none;
   }
-}
-.works {
-  height: 200vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
