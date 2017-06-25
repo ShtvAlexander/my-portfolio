@@ -53,24 +53,24 @@
 		<p class="header__description">Привет, меня зовут <br>Шестаков Александр,<br>я начинающий верстальщик <br>из Санкт-Петербурга.</p>
 	</header>
 	<section class="about page__section">
-		<a id="about" class="anchor about__anchor"></a>
-		<h2 class="about__headline">Расскажу о себе</h2>
-		<div class="inner about__inner">
-			<section class="main about__main">
-				<h3>Как все началось?</h3>
-				<p class="about__description">Я узнал о HTML & CSS год назад, с тех пор учусь верстать. Прохожу курс <a href="https://www.freecodecamp.com" class="link"
+		<a id="about" class="about__anchor"></a>
+		<h2 class="about__headline_first">Расскажу о себе</h2>
+		<div class="inner">
+			<section class="about__section about__section_main">
+				<h3 class="about__headline_second">Как все началось?</h3>
+				<p class="about__paragraph">Я узнал о HTML & CSS год назад, с тех пор учусь верстать. Прохожу курс <a href="https://www.freecodecamp.com" class="link"
 					 target="_blank"><em>freecodecamp</em></a>, паралелльно изучаю JS по книге <a href="https://github.com/getify/You-Dont-Know-JS"
 					 class="link" target="_blank"><em>YDKJS</em></a>.
 				</p>
-				<p class="about__description">В свободное время (когда меня бесит JS) осваиваю основы веб дизайна.
+				<p class="about__paragraph">В свободное время (когда меня бесит JS) осваиваю основы веб дизайна.
 				</p>
-				<p class="about__description">
+				<p class="about__paragraph">
 					Я создаю простые веб страницы с использованием HTML, CSS и ванильного JS.
 				</p>
 			</section>
-			<section class="secondary about__secondary about__secondary_commented">
-				<h3>Мои навыки</h3>
-				<ul class="list list_quoted">
+			<section class="about__section about__section_secondary about__section_commented ">
+				<h3 class="about__headline_second">Мои навыки</h3>
+				<ul class="list about__list about__list_quoted">
 					<li class="list__item">HTML & CSS - до сих пор гуглю некоторые тэги, черпаю силу на <a href="https://css-tricks.com/" class="link" target="_blank"><em>css-tricks.com</em></a></li>
 					<li class="list__item">JS - понимаю код легкого уровня, изучаю серию книг YDKJS, решаю задачки на <a href="https://js.checkio.org/" class="link"
 						 target="_blank"><em>chekio.</em></a></li>
@@ -82,13 +82,26 @@
 	</section>
 
 	<main class="works page__section" role="main">
-		<a id="works" class="anchor works__anchor"></a>
+		<a id="works" class="works__anchor"></a>
 		<h2 class="works__headline">Мои проекты</h2>
-		<article class="project works__project" >
-			<section class="main project__main"></section>
-			<section class="secondary project__secondary">
-				<h3>Project № 1</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quaerat fugit laudantium praesentium, quos dicta incidunt dolor corrupti reiciendis officia?</p>
+		<article class="works__project project" >
+			<section class="project__section project__section_main project__section_one">
+				<h3 class="project__headline">Motorcycle industry</h3>
+				<img src="./../public/images/project__img_one.jpg", alt="Image for Project № 1" width="100%" class="project__img">
+			</section>
+			<section class="project__section project__section_secondary">
+				<!--<h3 class="works__headline_second">Lorem ipsum.</h3>-->
+				<p class="project__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quaerat fugit laudantium praesentium, quos dicta incidunt dolor corrupti reiciendis officia?</p>
+			</section>
+		</article>
+		<article class="works__project project" >
+			<section class="project__section project__section_main project__section_two">
+				<h3 class="project__headline">Piano adventure</h3>
+				<img src="./../public/images/project__img_two.jpg", alt="Image for Project № 2" width="100%" class="project__img">
+			</section>
+			<section class="project__section project__section_secondary">
+				<!--<h4 class="works__headline_second">Project № 2</h4>-->
+				<p class="project__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ullam nulla nam, eligendi earum, in?</p>
 			</section>
 		</article>
 	</main>
